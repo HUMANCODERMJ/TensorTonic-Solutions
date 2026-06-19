@@ -7,7 +7,7 @@ def entropy_node(y):
     if y == []: return 0.0
     H = 0 # H -> entropy
     labels, counts = np.unique(y, return_counts=True)
-    proportions = [count / len(y) for label, count in zip(labels, counts)]
+    proportions = [count / len(y) for count in counts]
 
     print(proportions)
 
